@@ -1,7 +1,14 @@
 ConfuserEx
 ========
 ConfuserEx is a open-source protector for .NET applications.
-It is the successor of [Confuser](http://confuser.codeplex.com) project.
+Original https://yck1509.github.io/ConfuserEx/.
+
+
+Visual Studio Community 2017
+========
+O aplicativo foi compilado com o Visual Studio Community Edition 2017, o código fonte foi analisado e limpo com o CodeMaid, aplicativo gratuito.
+
+
 
 Features
 --------
