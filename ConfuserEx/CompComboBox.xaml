@@ -6,7 +6,7 @@
     <ComboBox ItemsSource="{Binding Components, ElementName=Root}"
               SelectedItem="{Binding SelectedComponent, ElementName=Root}"
               DisplayMemberPath="Id" FontFamily="Consolas"
-              ScrollViewer.CanContentScroll="False">
+              ScrollViewer.CanContentScroll="False" Background="#FF3E5062">
         <ComboBox.ItemContainerStyle>
             <Style TargetType="{x:Type ComboBoxItem}">
                 <Setter Property="OverridesDefaultStyle" Value="True" />

@@ -31,7 +31,7 @@
 
         <TextBox x:Name="pattern" Grid.Row="1" Grid.ColumnSpan="2"
                  Text="{Binding Pattern, UpdateSourceTrigger=PropertyChanged}" FontFamily="Consolas" Margin="5"
-                 VerticalContentAlignment="Center" />
+                 VerticalContentAlignment="Center" Background="#FF3E5062" />
         <Image x:Name="errorImg" Grid.Row="1" Grid.ColumnSpan="2" Source="{StaticResource Error}"
                Width="16px" Height="16px" ToolTip="{Binding ExpressionError}" Margin="0,0,10,0"
                Visibility="Hidden" HorizontalAlignment="Right" />
@@ -40,16 +40,16 @@
             <Label DockPanel.Dock="Left" Content="Preset : " VerticalAlignment="Center" />
             <ComboBox DockPanel.Dock="Left" SelectedItem="{Binding Preset, UpdateSourceTrigger=PropertyChanged}"
                       Margin="5" Width="100" VerticalAlignment="Center"
-                      ItemsSource="{local:EnumValues {x:Type core:ProtectionPreset}}" />
+                      ItemsSource="{local:EnumValues {x:Type core:ProtectionPreset}}" Background="#FF3E5062" />
             <CheckBox DockPanel.Dock="Right" Content="Inherit protections"
-                      IsChecked="{Binding Inherit}" Margin="5" VerticalAlignment="Center" />
+                      IsChecked="{Binding Inherit}" Margin="5" VerticalAlignment="Center" Background="#FF3E5062" />
         </DockPanel>
 
         <Label Grid.Row="3" Content="Protections:" VerticalAlignment="Center"
                HorizontalAlignment="Left" />
 
         <ListBox x:Name="prots" Grid.Row="4" Margin="5"
-                 ItemsSource="{Binding Protections}" Grid.IsSharedSizeScope="True">
+                 ItemsSource="{Binding Protections}" Grid.IsSharedSizeScope="True" Background="#FF3E5062">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -69,11 +69,11 @@
         </ListBox>
 
         <DockPanel Grid.Row="4" Grid.Column="1" LastChildFill="False">
-            <Button Height="26" Margin="5" DockPanel.Dock="Top" x:Name="AddBtn">
+            <Button Height="26" Margin="5" DockPanel.Dock="Top" x:Name="AddBtn" Background="#FF3E5062">
                 <TextBlock FontSize="14px" FontFamily="{DynamicResource FontAwesome}" Text="&#xf067;" Height="12px"
                            TextOptions.TextRenderingMode="GrayScale" />
             </Button>
-            <Button Height="26" Margin="5" DockPanel.Dock="Top" x:Name="RemoveBtn">
+            <Button Height="26" Margin="5" DockPanel.Dock="Top" x:Name="RemoveBtn" Background="#FF3E5062">
                 <TextBlock FontSize="14px" FontFamily="{DynamicResource FontAwesome}" Text="&#xf068;" Height="12px"
                            TextOptions.TextRenderingMode="GrayScale" />
             </Button>

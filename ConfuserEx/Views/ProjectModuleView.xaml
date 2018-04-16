@@ -21,15 +21,15 @@
                VerticalContentAlignment="Center" />
         <TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="5" VerticalContentAlignment="Center"
                  Text="{Binding Path, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                 local:FileDragDrop.Command="{x:Static local:FileDragDrop.FileCmd}" />
+                 local:FileDragDrop.Command="{x:Static local:FileDragDrop.FileCmd}" Background="#FF3E5062" />
 
         <Label Content="SN Key Path : " Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Right"
                VerticalContentAlignment="Center" />
         <TextBox x:Name="PathBox" Grid.Row="1" Grid.Column="1" Margin="5" VerticalContentAlignment="Center"
                  TextChanged="PathBox_TextChanged"
                  Text="{Binding SNKeyPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                 local:FileDragDrop.Command="{x:Static local:FileDragDrop.FileCmd}" />
-        <Button Grid.Row="1" Grid.Column="2" Margin="5" VerticalAlignment="Center" Height="26" Click="ChooseSNKey">
+                 local:FileDragDrop.Command="{x:Static local:FileDragDrop.FileCmd}" Background="#FF3E5062" />
+        <Button Grid.Row="1" Grid.Column="2" Margin="5" VerticalAlignment="Center" Height="26" Click="ChooseSNKey" Background="#FF3E5062">
             <TextBlock FontSize="14px" FontFamily="{DynamicResource FontAwesome}" Text="&#xf141;" Height="10px"
                        TextOptions.TextRenderingMode="GrayScale" />
         </Button>
@@ -38,9 +38,9 @@
                VerticalContentAlignment="Center" />
         <TextBox x:Name="PwdBox" Grid.Row="2" Grid.Column="1" Margin="5" Grid.ColumnSpan="2"
                  VerticalContentAlignment="Center"
-                 Text="{Binding SNKeyPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                 Text="{Binding SNKeyPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Background="#FF3E5062" />
 
         <Button Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Right" Content="Done"
-                Width="70" Margin="5" Click="Done" />
+                Width="70" Margin="5" Click="Done" Background="#FF3E5062" />
     </Grid>
 </Window>
