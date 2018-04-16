@@ -38,41 +38,55 @@
                 <Separator DockPanel.Dock="Bottom" />
 
                 <StackPanel TextBlock.FontSize="13" VerticalAlignment="Center" HorizontalAlignment="Stretch">
-                    <Label>This version was adapted by Petter Lopes.</Label>
-                    <Label>
-                        <TextBlock>
-                            <Hyperlink NavigateUri="https://periciacomputacional.com"
-                                       Command="{Binding LaunchBrowser}"
-                                       CommandParameter="https://periciacomputacional.com">
-                                Visit my website.
-                            </Hyperlink>
-                        </TextBlock>
-                    </Label>
                     <Label FontWeight="Bold">ConfuserEx, a .NET protector</Label>
-                                        
+                    <Label>Developed by Ki, open sourced under MIT license.</Label>
                     <Label>
                         <TextBlock>
-                            <Hyperlink NavigateUri="https://github.com/petterlopes/ConfuserEx"
+                            <Hyperlink NavigateUri="http://yck1509.github.io/ConfuserEx/"
                                        Command="{Binding LaunchBrowser}"
-                                       CommandParameter="https://github.com/petterlopes/ConfuserEx">
+                                       CommandParameter="http://yck1509.github.io/ConfuserEx/">
                                 Visit the project page for details.
                             </Hyperlink>
                         </TextBlock>
                     </Label>
                     <Label Height="20px" />
-                    <Label>Original beveloped by Ki, open sourced under MIT license.</Label>
+
+                    <Label>If you like it or find it useful,</Label>
                     <Label>
                         <TextBlock>
-                                <Hyperlink NavigateUri="https://github.com/yck1509/ConfuserEx"
-                                           Command="{Binding LaunchBrowser}"
-                                           CommandParameter="https://github.com/yck1509/ConfuserEx">
-                                    Visit the original project page for details.
-                                </Hyperlink>
+                            <Hyperlink NavigateUri="http://yck1509.github.io/ConfuserEx/#donation"
+                                       Command="{Binding LaunchBrowser}"
+                                       CommandParameter="http://yck1509.github.io/ConfuserEx/#donation">
+                                feel free to support the project by making a donation!
+                            </Hyperlink>
                         </TextBlock>
                     </Label>
                 </StackPanel>
             </DockPanel>
-            
+
+            <Button Grid.Row="2" Grid.Column="0" Command="{Binding LaunchBrowser}"
+                    CommandParameter="http://board.b-at-s.info/" Focusable="False" Cursor="Hand">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <ContentPresenter />
+                    </ControlTemplate>
+                </Button.Template>
+                <Image Source="{DynamicResource TeamLogo}" Width="400" Height="100" />
+            </Button>
+
+            <StackPanel Grid.Column="1" Grid.RowSpan="3" TextBlock.FontSize="13" Margin="10"
+                        VerticalAlignment="Stretch" HorizontalAlignment="Center">
+                <Label HorizontalContentAlignment="Center">Special Thanks to:</Label>
+                <Label HorizontalContentAlignment="Center">0xd4d</Label>
+                <Label HorizontalContentAlignment="Center">CodeCracker</Label>
+                <Label HorizontalContentAlignment="Center">JeRRy</Label>
+                <Label HorizontalContentAlignment="Center">kao</Label>
+                <Label HorizontalContentAlignment="Center">Kurapica</Label>
+                <Label HorizontalContentAlignment="Center">UbbeLoL</Label>
+                <Label HorizontalContentAlignment="Center">whoknows</Label>
+                <Label HorizontalContentAlignment="Center">Members of Black Storm Forum</Label>
+                <Label HorizontalContentAlignment="Center">and You!</Label>
+            </StackPanel>
         </Grid>
     </DataTemplate>
 </ResourceDictionary>
