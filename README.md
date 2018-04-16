@@ -1,20 +1,22 @@
 ConfuserEx
+========
 Best Dot Net code obfuscation and protection free.
 
 
 ConfuserEx is a open-source protector for .NET applications. 
-
-More clean project and updated: https://github.com/petterlopes/ConfuserEx
-
+========
+More clean project and updated
 
 
 Visual Studio Community 2017
+=====
 Updated with Visual Studio Community Edition 2017, source code cleaned with CodeMaid.
 
 
 
 Features
-Supports .NET Framework 2.0/3.0/3.5/4.0/4.5
+=====
+Supports .NET Framework since 2.0
 Symbol renaming (Support WPF/BAML)
 Protection against debuggers/profilers
 Protection against memory dumping
