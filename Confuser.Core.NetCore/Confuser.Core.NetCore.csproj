@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Project\ConfuserPrj.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Project\ConfuserPrj.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\dnlib.NetCore\dnlib.NetCore.csproj" />
+  </ItemGroup>
+
+</Project>

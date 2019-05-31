@@ -37,3 +37,4 @@ GlobalAssemblyInfo.cs
 /Build/*.zip
 !Build/7z.exe
 /.vs/Confuser2/v15/Server/sqlite3
+/.vs/Confuser2/v16/Server/sqlite3

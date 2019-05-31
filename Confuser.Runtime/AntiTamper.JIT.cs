@@ -90,8 +90,8 @@ namespace Confuser.Runtime
                 ver5 = Environment.Version.Revision > 17020;
             }
             else
-                moduleHnd = *(IntPtr*)(&hnd);
-
+                //moduleHnd = *(IntPtr*)(&hnd);
+                Marshal.PtrToStructure(moduleHnd, hnd);
             Hook();
         }
 
