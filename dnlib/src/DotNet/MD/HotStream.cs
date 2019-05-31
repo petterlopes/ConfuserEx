@@ -101,7 +101,9 @@ namespace dnlib.DotNet.MD
             this.endOffset = (long)baseOffset + imageStream.Length;
         }
 
+#pragma warning disable CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\dnlib\src\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\dnlib\src\HandleProcessCorruptedStateExceptionsAttribute.cs'.
         [HandleProcessCorruptedStateExceptions, SecurityCritical]   // Req'd on .NET 4.0
+#pragma warning restore CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\dnlib\src\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\dnlib\src\HandleProcessCorruptedStateExceptionsAttribute.cs'.
         private HotTableStream CreateHotTableStream()
         {
             try
@@ -118,7 +120,9 @@ namespace dnlib.DotNet.MD
             }
         }
 
+#pragma warning disable CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\dnlib\src\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\dnlib\src\HandleProcessCorruptedStateExceptionsAttribute.cs'.
         [HandleProcessCorruptedStateExceptions, SecurityCritical]   // Req'd on .NET 4.0
+#pragma warning restore CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\dnlib\src\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\dnlib\src\HandleProcessCorruptedStateExceptionsAttribute.cs'.
         private ThreadSafe.IList<HotHeapStream> CreateHotHeapStreams()
         {
             try

@@ -749,7 +749,7 @@ namespace dnlib.DotNet
                     result = null;
                     break;
             }
-            exit:
+        exit:
             recursionCounter.Decrement();
             return result;
         }

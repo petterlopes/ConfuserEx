@@ -59,7 +59,9 @@ namespace Confuser.Runtime
         /// </summary>
         private static bool IsProfilerAttached
         {
+#pragma warning disable CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             [HandleProcessCorruptedStateExceptions, SecurityCritical] // Req'd on .NET 4.0
+#pragma warning restore CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             get
             {
                 try
@@ -78,7 +80,9 @@ namespace Confuser.Runtime
         /// </summary>
         private static bool WasProfilerAttached
         {
+#pragma warning disable CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             [HandleProcessCorruptedStateExceptions, SecurityCritical] // Req'd on .NET 4.0
+#pragma warning restore CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             get
             {
                 try
@@ -336,7 +340,9 @@ namespace Confuser.Runtime
                 return result;
             }
 
+#pragma warning disable CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             [HandleProcessCorruptedStateExceptions, SecurityCritical] // Req'd on .NET 4.0
+#pragma warning restore CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             private unsafe bool TakeOwnershipOfNamedPipe()
             {
                 try
@@ -409,7 +415,9 @@ namespace Confuser.Runtime
                 return CreateNamedPipe();
             }
 
+#pragma warning disable CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             [HandleProcessCorruptedStateExceptions, SecurityCritical] // Req'd on .NET 4.0
+#pragma warning restore CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             private static unsafe void FixTimeOutOption(IntPtr timeOutOptionAddr)
             {
                 if (timeOutOptionAddr == IntPtr.Zero)
@@ -489,11 +497,13 @@ namespace Confuser.Runtime
                 return !profilerPipe.IsInvalid;
             }
 
+#pragma warning disable CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             /// <summary>
             ///     Finds the address of clr!ProfilingAPIAttachDetach::s_attachThreadingMode
             /// </summary>
             /// <returns>The address or <c>null</c> if none was found</returns>
             [HandleProcessCorruptedStateExceptions, SecurityCritical] // Req'd on .NET 4.0
+#pragma warning restore CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             private static unsafe IntPtr FindThreadingModeAddress()
             {
                 try
@@ -591,11 +601,13 @@ namespace Confuser.Runtime
                 return IntPtr.Zero;
             }
 
+#pragma warning disable CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             /// <summary>
             ///     Finds the address of clr!EXTERNAL_ProfAPIMaxWaitForTriggerMs
             /// </summary>
             /// <returns>The address or <c>null</c> if none was found</returns>
             [HandleProcessCorruptedStateExceptions, SecurityCritical] // Req'd on .NET 4.0
+#pragma warning restore CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             private static unsafe IntPtr FindTimeOutOptionAddress()
             {
                 try
@@ -681,11 +693,13 @@ namespace Confuser.Runtime
                 return false;
             }
 
+#pragma warning disable CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             /// <summary>
             ///     Finds the attacher thread's thread proc and patches it so it returns immediately.
             /// </summary>
             /// <returns><c>true</c> if it was patched, <c>false</c> otherwise</returns>
             [HandleProcessCorruptedStateExceptions, SecurityCritical] // Req'd on .NET 4.0
+#pragma warning restore CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             private unsafe bool PatchAttacherThreadProc()
             {
                 IntPtr threadProc = FindAttacherThreadProc();
@@ -723,7 +737,9 @@ namespace Confuser.Runtime
                 return true;
             }
 
+#pragma warning disable CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             [HandleProcessCorruptedStateExceptions, SecurityCritical] // Req'd on .NET 4.0
+#pragma warning restore CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             private unsafe IntPtr FindAttacherThreadProc()
             {
                 try
@@ -806,6 +822,7 @@ namespace Confuser.Runtime
                 return IntPtr.Zero;
             }
 
+#pragma warning disable CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             /// <summary>
             ///     Checks whether it appears to be the profiler attacher thread proc
             /// </summary>
@@ -814,6 +831,7 @@ namespace Confuser.Runtime
             /// <param name="threadProc">Possible thread proc</param>
             /// <returns><c>true</c> if it's probably the thread proc, <c>false</c> otherwise</returns>
             [HandleProcessCorruptedStateExceptions, SecurityCritical] // Req'd on .NET 4.0
+#pragma warning restore CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             private static unsafe bool CheckThreadProc(byte* codeStart, byte* codeEnd, IntPtr threadProc)
             {
                 try
@@ -835,12 +853,14 @@ namespace Confuser.Runtime
                 return false;
             }
 
+#pragma warning disable CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             /// <summary>
             ///     This code tries to find the CLR 4.0 profiler control block address. It does this
             ///     by searching for the code that accesses the profiler status field.
             /// </summary>
             /// <returns><c>true</c> if it was found, <c>false</c> otherwise</returns>
             [HandleProcessCorruptedStateExceptions, SecurityCritical] // Req'd on .NET 4.0
+#pragma warning restore CS0436 // The type 'HandleProcessCorruptedStateExceptionsAttribute' in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs' conflicts with the imported type 'HandleProcessCorruptedStateExceptionsAttribute' in 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'. Using the type defined in 'D:\GIT\ConfuserEx\Confuser.Runtime\antinet\HandleProcessCorruptedStateExceptionsAttribute.cs'.
             private unsafe bool FindProfilerControlBlock()
             {
                 // Record each hit here and pick the one with the most hits

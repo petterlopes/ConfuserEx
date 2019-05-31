@@ -1939,7 +1939,7 @@ namespace dnlib.DotNet
                     Equals(a.DeclaringType, b.DeclaringType) &&
                     (DontCompareTypeScope || TypeDefScopeEquals(a, b));
 
-            exit:;
+        exit:;
             recursionCounter.Decrement();
             return result;
         }
@@ -3119,7 +3119,7 @@ namespace dnlib.DotNet
                     Equals(a.Signature, b.Signature) &&
                     (!CompareMethodFieldDeclaringType || Equals(a.DeclaringType, b.Class));
 
-            exit:;
+        exit:;
             recursionCounter.Decrement();
             return result;
         }
@@ -3154,7 +3154,7 @@ namespace dnlib.DotNet
                     Equals(a.Signature, b.Signature) &&
                     (!CompareMethodFieldDeclaringType || Equals(a.DeclaringType, b.DeclaringType));
 
-            exit:;
+        exit:;
             recursionCounter.Decrement();
             return result;
         }
@@ -3737,7 +3737,7 @@ namespace dnlib.DotNet
                     EnclosingTypeEquals(a.DeclaringType, b.DeclaringType) &&
                     (DontCompareTypeScope || Equals(a.Module, b.Module));
 
-            exit:;
+        exit:;
             recursionCounter.Decrement();
             return result;
         }
@@ -4384,7 +4384,9 @@ namespace dnlib.DotNet
         /// <returns><c>true</c> if same, <c>false</c> otherwise</returns>
         private bool Equals(IModule a, Module b)
         {
+#pragma warning disable CS0252 // Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'Module'
             if (a == b)
+#pragma warning restore CS0252 // Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'Module'
                 return true;
             if (a == null || b == null)
                 return false;
@@ -4403,7 +4405,9 @@ namespace dnlib.DotNet
         /// <returns><c>true</c> if same, <c>false</c> otherwise</returns>
         private bool Equals(IAssembly a, Assembly b)
         {
+#pragma warning disable CS0252 // Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'Assembly'
             if (a == b)
+#pragma warning restore CS0252 // Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'Assembly'
                 return true;
             if (a == null || b == null)
                 return false;
@@ -4434,7 +4438,9 @@ namespace dnlib.DotNet
             if (!CompareMethodFieldDeclaringType)
                 return true;
 
+#pragma warning disable CS0252 // Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'MethodBase'
             if (a == b)
+#pragma warning restore CS0252 // Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'MethodBase'
                 return true;
             if (a == null || b == null)
                 return false;
@@ -4514,7 +4520,9 @@ namespace dnlib.DotNet
         /// <returns><c>true</c> if same, <c>false</c> otherwise</returns>
         public bool Equals(IMethod a, MethodBase b)
         {
+#pragma warning disable CS0252 // Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'MethodBase'
             if (a == b)
+#pragma warning restore CS0252 // Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'MethodBase'
                 return true;
             if (a == null || b == null)
                 return false;
@@ -4584,7 +4592,7 @@ namespace dnlib.DotNet
                     Equals(amSig, b) &&
                     (!CompareMethodFieldDeclaringType || Equals(a.DeclaringType, b.DeclaringType));
 
-            exit:;
+        exit:;
             recursionCounter.Decrement();
             return result;
         }
@@ -5106,7 +5114,9 @@ namespace dnlib.DotNet
         /// <returns><c>true</c> if same, <c>false</c> otherwise</returns>
         public bool Equals(IField a, FieldInfo b)
         {
+#pragma warning disable CS0252 // Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'FieldInfo'
             if (a == b)
+#pragma warning restore CS0252 // Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'FieldInfo'
                 return true;
             if (a == null || b == null)
                 return false;

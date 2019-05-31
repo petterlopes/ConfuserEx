@@ -253,7 +253,7 @@ namespace dnlib.DotNet.Pdb
             // Don't use recursive calls
             var stack = new Stack<CreateScopeState>();
             var state = new CreateScopeState() { SymScope = symScope };
-            recursive_call:
+        recursive_call:
             int instrIndex = 0;
             state.PdbScope = new PdbScope()
             {
@@ -283,7 +283,7 @@ namespace dnlib.DotNet.Pdb
             // Here's the now somewhat obfuscated for loop
             state.ChildrenIndex = 0;
             state.Children = state.SymScope.GetChildren();
-            do_return:
+        do_return:
             if (state.ChildrenIndex < state.Children.Length)
             {
                 var child = state.Children[state.ChildrenIndex];
