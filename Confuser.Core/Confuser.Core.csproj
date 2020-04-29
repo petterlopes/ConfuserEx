@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Confuser.Core</RootNamespace>
     <AssemblyName>Confuser.Core</AssemblyName>
-    <TargetFrameworkVersion Condition=" !$(DefineConstants.Contains('NET45')) ">v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition=" !$(DefineConstants.Contains('NET45')) ">v4.8</TargetFrameworkVersion>
     <TargetFrameworkVersion Condition=" $(DefineConstants.Contains('NET45')) ">v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
